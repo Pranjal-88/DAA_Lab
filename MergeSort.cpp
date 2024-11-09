@@ -1,12 +1,14 @@
 #include<iostream>
 using namespace std;
 
+
 void merge(int array[], int left, int mid, int right){
     int subArr_a = mid - left + 1;
     int subArr_b = right - mid;
 
     int *leftArr = new int[subArr_a];
     int *rightArr = new int[subArr_b];
+
 
     for (int i = 0; i < subArr_a; i++){
         leftArr[i] = array[left + i];
