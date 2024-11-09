@@ -1,5 +1,8 @@
 #include<iostream>
+#include<algorithm>
+#include <vector>
 using namespace std;
+
 
 void merge(int array[], int left, int mid, int right){
     int subArr_a = mid - left + 1;
@@ -7,6 +10,7 @@ void merge(int array[], int left, int mid, int right){
 
     int *leftArr = new int[subArr_a];
     int *rightArr = new int[subArr_b];
+
 
     for (int i = 0; i < subArr_a; i++){
         leftArr[i] = array[left + i];
