@@ -2,6 +2,7 @@
 #include<vector>
 using namespace std;
 
+
 bool is_Safe(vector<vector<bool>>& graph,vector<int>& path,int pos,int curr_ver){
     if (!graph[path[pos-1]][curr_ver])
         return false;
